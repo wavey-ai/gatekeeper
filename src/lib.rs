@@ -1,6 +1,6 @@
 use base64::engine::general_purpose::STANDARD as base64_engine;
 use base64::Engine;
-use gen_id::{ConfigPreset::ShortEpochMaxNodes, IdGenerator, DEFAULT_EPOCH};
+use gen_id::{ConfigPreset::ShardedConfig, IdGenerator, DEFAULT_EPOCH};
 use hmac::{Hmac, Mac};
 use rustls::PrivateKey;
 use sha2::Sha256;
@@ -35,7 +35,7 @@ pub struct Gatekeeper {
 
 impl Gatekeeper {
     pub fn new(base64_encoded_pem_key: &str) -> Result<Self, Box<dyn Error + Send + Sync>> {
-        let snowflakes = IdGenerator::new(ShortEpochMaxNodes, DEFAULT_EPOCH);
+        let snowflakes = IdGenerator::new(ShardedConfig, DEFAULT_EPOCH);
         let private_key = privkey_from_base64(base64_encoded_pem_key)?;
 
         Ok(Self {

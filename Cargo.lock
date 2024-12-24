@@ -255,7 +255,7 @@ dependencies = [
 [[package]]
 name = "gen-id"
 version = "0.2.1"
-source = "git+ssh://git@github.com/wavey-ai/gen-id.git#00430a3b41ce38600bf543f6e571f60a9acfbc38"
+source = "git+ssh://git@github.com/wavey-ai/gen-id.git#edaa680e249407a0cc76670bf0f7e42c7a5ff12d"
 dependencies = [
  "rand",
  "serde",
@@ -440,9 +440,9 @@ dependencies = [
 
 [[package]]
 name = "object"
-version = "0.36.6"
+version = "0.36.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "08dde84f120894086dbb40c7a0257f76fdc72b6f52cdb56c2b5121b2f81b0c83"
+checksum = "62948e14d923ea95ea2c7c86c71013138b66525b86bdc08d2dcc262bdb497b87"
 dependencies = [
  "memchr",
 ]
@@ -768,9 +768,9 @@ checksum = "13c2bddecc57b384dee18652358fb23172facb8a2c51ccc10d74c157bdea3292"
 
 [[package]]
 name = "syn"
-version = "2.0.90"
+version = "2.0.91"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "919d3b74a5dd0ccd15aeb8f93e7006bd9e14c295087c9896a110f490752bcf31"
+checksum = "d53cbcb5a243bd33b7858b1d7f4aca2153490815872d86d955d6ea29f743c035"
 dependencies = [
  "proc-macro2",
  "quote",
