@@ -1,12 +1,15 @@
 [package]
-name = "gatekeeper"
+name = "wavey-gatekeeper"
 version = "0.1.0"
 edition = "2021"
+license = "MIT"
+description = "Media session authorization primitives for Wavey services"
+repository = "https://github.com/wavey-ai/gatekeeper"
 
 [dependencies]
 base64 = "0.22.1"
 bytes = "1.6.0"
-gen-id = { git = "ssh://git@github.com/wavey-ai/gen-id.git" }
+gen-id = "0.3.0"
 hmac = "0.12.1"
 minicbor = "0.25.1"
 pot = "3.0.1"

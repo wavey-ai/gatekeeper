@@ -234,28 +234,10 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "42703706b716c37f96a77aea830392ad231f44c9e9a67872fa5548707e11b11c"
 
 [[package]]
-name = "gatekeeper"
-version = "0.1.0"
-dependencies = [
- "base64",
- "bytes",
- "gen-id",
- "hmac",
- "minicbor",
- "pot",
- "rustls 0.21.12",
- "serde",
- "serde_derive",
- "sha2",
- "tls-helpers",
- "tracing",
- "tracing-subscriber",
-]
-
-[[package]]
 name = "gen-id"
-version = "0.2.1"
-source = "git+ssh://git@github.com/wavey-ai/gen-id.git#edaa680e249407a0cc76670bf0f7e42c7a5ff12d"
+version = "0.3.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3b87e2853bc4501e1822212ba9177c93b988271636600cecbd4760a4e4593bb2"
 dependencies = [
  "rand",
  "serde",
@@ -917,6 +899,25 @@ name = "wasi"
 version = "0.11.0+wasi-snapshot-preview1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "9c8d87e72b64a3b4db28d11ce29237c246188f4f51057d65a7eab63b7987e423"
+
+[[package]]
+name = "wavey-gatekeeper"
+version = "0.1.0"
+dependencies = [
+ "base64",
+ "bytes",
+ "gen-id",
+ "hmac",
+ "minicbor",
+ "pot",
+ "rustls 0.21.12",
+ "serde",
+ "serde_derive",
+ "sha2",
+ "tls-helpers",
+ "tracing",
+ "tracing-subscriber",
+]
 
 [[package]]
 name = "which"
